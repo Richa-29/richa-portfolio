@@ -1,1 +1,30 @@
-<p>projects works!</p>
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    @for (project of projects; track project.name) {
+      <div class="project-card">
+        <h3>{{ project.name }}</h3>
+        <p class="tagline">{{ project.tagline }}</p>
+        <p class="description">{{ project.description }}</p>
+
+        <div class="highlights">
+          @for (tag of project.highlights; track tag) {
+            <span class="highlight-chip">{{ tag }}</span>
+          }
+        </div>
+
+        <div class="tech-stack">
+          @for (tech of project.techStack; track tech) {
+            <span class="tech-tag">{{ tech }}</span>
+          }
+        </div>
+
+        <div class="project-links">
+          <a [href]="project.liveUrl" target="_blank" class="btn-primary">Live Demo</a>
+          <a [href]="project.githubUrl" target="_blank" class="btn-secondary">GitHub</a>
+        </div>
+      </div>
+    }
+  </div>
+</section>

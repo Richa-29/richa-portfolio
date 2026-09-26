@@ -1,0 +1,115 @@
+:host {
+  display: block;
+}
+
+.projects {
+  padding: var(--space-2xl);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 32px;
+  color: var(--color-text);
+  margin: 0 0 var(--space-xl);
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: var(--space-xl);
+}
+
+.project-card {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  h3 {
+    font-size: 22px;
+    color: var(--color-text);
+    margin: 0 0 4px;
+  }
+
+  .tagline {
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 var(--space-md);
+  }
+
+  .description {
+    color: var(--color-text-muted);
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 0 var(--space-lg);
+  }
+}
+
+.highlights, .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.highlight-chip {
+  background: rgba(212, 165, 116, 0.1);
+  color: var(--color-primary);
+  padding: 4px 12px;
+  border-radius: var(--radius-lg);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tech-tag {
+  background: var(--color-bg-subtle);
+  color: var(--color-text-muted);
+  padding: 4px 12px;
+  border-radius: var(--radius-lg);
+  font-size: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.project-links {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.btn-primary, .btn-secondary {
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+
+  &:hover {
+    background: var(--color-primary-dark);
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+
+  &:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+}

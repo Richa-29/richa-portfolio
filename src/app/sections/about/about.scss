@@ -1,0 +1,23 @@
+:host {
+  display: block;
+}
+
+.about {
+  padding: var(--space-2xl);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 32px;
+  color: var(--color-text);
+  margin: 0 0 var(--space-xl);
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-lg);
+}

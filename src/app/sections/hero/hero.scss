@@ -1,0 +1,78 @@
+:host {
+  display: block;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-2xl);
+}
+
+.hero-content {
+  max-width: 640px;
+
+  h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 var(--space-sm);
+  }
+
+  .role {
+    font-size: 20px;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin: 0 0 var(--space-lg);
+  }
+
+  .intro {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin: 0 0 var(--space-xl);
+  }
+}
+
+.cta-group {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 14px 32px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border: none;
+
+  &:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+
+  &:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+}

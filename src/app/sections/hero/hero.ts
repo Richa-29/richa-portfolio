@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
+  standalone: true,
   imports: [],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class Hero {}
+export class HeroComponent {
+  scrollToProjects() {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  }
+}
