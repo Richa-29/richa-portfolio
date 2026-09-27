@@ -1,0 +1,31 @@
+<section class="work" id="work">
+  <h2>Professional Experience</h2>
+
+  <div class="work-list">
+    @for (job of workProjects; track job.company) {
+      <div class="work-item">
+        <div class="work-header">
+          <div>
+            <h3>{{ job.role }}</h3>
+            <p class="company">{{ job.company }}</p>
+          </div>
+          <span class="duration">{{ job.duration }}</span>
+        </div>
+
+        <p class="description">{{ job.description }}</p>
+
+        <ul class="impact-list">
+          @for (point of job.impact; track point) {
+            <li>{{ point }}</li>
+          }
+        </ul>
+
+        <div class="tech-stack">
+          @for (tech of job.techStack; track tech) {
+            <span class="tech-tag">{{ tech }}</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

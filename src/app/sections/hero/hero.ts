@@ -12,4 +12,7 @@ export class HeroComponent {
   scrollToProjects() {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   }
+  scrollToAboutMe() {
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  }
 }

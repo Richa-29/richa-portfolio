@@ -1,10 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
-interface SkillGroup {
-  category: string;
-  skills: string[];
-}
-
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -17,7 +12,7 @@ export class Skills {
   skillGroups: SkillGroup[] = [
     {
       category: 'Frontend',
-      skills: ['Angular', 'TypeScript', 'RxJS', 'Signals', 'SCSS', 'Reactive Forms']
+      skills: ['Angular', 'TypeScript', 'Javascript', 'RxJS', 'Signals', 'SCSS', 'Reactive Forms', 'Standalone Components', 'NgRx']
     },
     {
       category: 'Concepts',
