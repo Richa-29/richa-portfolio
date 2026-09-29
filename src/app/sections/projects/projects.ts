@@ -23,7 +23,7 @@ export class Projects {
       name: 'Employee Management System',
       tagline: 'An admin dashboard for managing employees, leaves, departments and roles',
       description: 'A role-based admin system with server-side pagination, debounced search, and department-wise leave approval workflows.',
-      liveUrl: 'https://your-employee-app.vercel.app/',
+      liveUrl: 'https://employee-management-system-skgm.vercel.app/',
       githubUrl: 'https://github.com/Richa-29/Employee-Management-System',
       techStack: ['Angular', 'RxJS', 'Reactive Forms', 'Signals'],
       highlights: ['Role-Based Access', 'Server-Side Pagination', 'Debounced Search', 'Signal-Based Charts']
