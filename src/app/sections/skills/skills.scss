@@ -4,8 +4,18 @@
 
 .skills {
   padding: var(--space-2xl);
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
+  @media (max-width: 600px) {
+    padding: var(--space-xl) var(--space-md);
+  }
+}
+
+.skills-content {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
 }
 
 h2 {
@@ -16,12 +26,20 @@ h2 {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-xl);
+  column-count: 2;
+  column-gap: var(--space-xl);
+
+  @media (max-width: 700px) {
+    column-count: 1;
+  }
 }
 
 .skill-group {
+  break-inside: avoid; 
+  margin-bottom: var(--space-xl);
+  display: inline-block;
+  width: 100%;
+
   h3 {
     font-size: 15px;
     color: var(--color-primary);

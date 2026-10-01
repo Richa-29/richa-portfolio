@@ -3,37 +3,23 @@
 }
 
 .hero {
-  min-height: 90vh;
+  position: relative;
+  min-height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: var(--space-2xl);
+  padding: 70px var(--space-md) var(--space-2xl);
 }
 
-.hero-content {
-  max-width: 640px;
-
-  h1 {
-    font-size: 56px;
-    font-weight: 700;
-    color: var(--color-text);
-    margin: 0 0 var(--space-sm);
-  }
-
-  .role {
-    font-size: 20px;
-    color: var(--color-primary);
-    font-weight: 600;
-    margin: 0 0 var(--space-lg);
-  }
-
-  .intro {
-    font-size: 16px;
-    color: var(--color-text-muted);
-    line-height: 1.7;
-    margin: 0 0 var(--space-xl);
-  }
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-primary);
+  margin-bottom: var(--space-lg);
 }
 
 .cta-group {
@@ -77,16 +63,8 @@
   }
 }
 
-.hero {
-  padding-top: calc(var(--space-2xl) + 60px);
-  position: relative;
-}
-
 .scroll-indicator {
-  position: absolute;
-  bottom: var(--space-xl);
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: var(--space-xl);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,4 +88,76 @@
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(6px); }
+}
+
+@media (max-width: 480px) {
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 var(--space-md);
+  }
+}
+
+.hero-content {
+  max-width: 640px;
+
+  h1 {
+    font-size: clamp(32px, 8vw, 56px);
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 var(--space-sm);
+  }
+
+  .role {
+    font-size: clamp(15px, 4vw, 20px);
+    color: var(--color-primary);
+    font-weight: 600;
+    margin: 0 0 var(--space-sm);  // space-lg se space-sm kiya
+  }
+
+  .intro {
+    font-size: clamp(14px, 3.5vw, 16px);
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    margin: 0 0 var(--space-xl);
+    padding: 0 var(--space-sm);
+  }
+}
+
+.hero-contact {
+  margin-bottom: var(--space-lg);  // margin-top ki jagah margin-bottom, kyunki ab yeh beech me hai
+  display: flex;
+  align-items: center;
+  justify-content: center;  // center alignment add kiya
+  gap: var(--space-sm);
+  font-size: 13px;
+  color: var(--color-text-muted);
+
+  a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  .divider {
+    color: var(--color-border);
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 4px;
+
+    .divider {
+      display: none;
+    }
+  }
 }

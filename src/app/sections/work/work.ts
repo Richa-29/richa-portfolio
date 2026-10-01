@@ -11,12 +11,12 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 export class WorkComponent {
   workProjects: WorkProject[] = [
     {
-      company: 'Rsystems Int. Ltd. (Mobilize — Oil & Gas)',
-      role: 'Senior Front-End Developer',
+      company: 'Rsystems Int. Ltd. (Oil & Gas Domain)',
+      role: 'Senior Software Developer',
       duration: 'Aug 2022 – Feb 2026',
       description: 'A data-rich analytics platform for the oil and gas industry, providing real-time well operations visualization for drilling engineers and operations managers.',
       impact: [
-        'Built interactive Highcharts dashboards visualizing drilling metrics — wellbore trajectory, BHA configuration, and directional drilling parameters',
+        'Built interactive Highcharts dashboards visualizing drilling metrics - wellbore trajectory, BHA configuration, and directional drilling parameters',
         'Implemented NgRx store to manage deeply nested well data across multiple dashboard views without redundant API calls',
         'Designed reusable components for well cards, KPI tiles, and chart wrappers for consistent UX across the app'
       ],
@@ -26,7 +26,7 @@ export class WorkComponent {
       company: 'Eshopbox Ecommerce Pvt. Ltd.',
       role: 'Front-End Developer & Team Lead',
       duration: 'May 2021 – July 2022',
-      description: 'An order-tracking platform for brand owners covering the full customer order lifecycle — analytics, sales metrics, and shipment tracking.',
+      description: 'An order-tracking platform for brand owners covering the full customer order lifecycle - analytics, sales metrics, and shipment tracking.',
       impact: [
         'Led a team of 5 front-end engineers, conducting code reviews and ensuring delivery standards',
         'Architected a centralized NgRx store for scalable state management across the application',
@@ -36,15 +36,15 @@ export class WorkComponent {
     },
     {
       company: 'Policybazaar',
-      role: 'Full-Stack Developer',
+      role: 'Technical Associate',
       duration: 'Aug 2018 – Dec 2020',
-      description: 'Built multiple enterprise systems from scratch — including a Revenue Management System, Purchase Order System, and a Cost Invoicing ERP — handling everything from UI to database design.',
+      description: 'Built multiple enterprise systems from scratch - including a Revenue Management System, Purchase Order System, and a Cost Invoicing ERP - handling everything from UI to database design.',
       impact: [
         'Designed and implemented role-based access control architecture across all modules',
         'Built an interactive dashboard with charting libraries for financial statistics and vendor insights',
         'Owned full-stack delivery, integrating Angular front-ends with C# Web APIs and SQL Server'
       ],
-      techStack: ['Angular 6/7', 'TypeScript', 'C#', 'Web API', 'SQL Server']
+      techStack: ['Angular 6/7', 'TypeScript']
     },
     {
       company: 'Iris Software Pvt. Ltd.',

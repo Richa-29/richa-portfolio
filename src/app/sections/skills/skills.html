@@ -1,16 +1,17 @@
 <section class="skills" id="skills">
   <h2>Skills</h2>
-
-  <div class="skills-grid">
-    @for (group of skillGroups; track group.category) {
-      <div class="skill-group">
-        <h3>{{ group.category }}</h3>
-        <div class="skill-tags">
-          @for (skill of group.skills; track skill) {
-            <span class="skill-tag">{{ skill }}</span>
-          }
+  <div class="skills-content">
+    <div class="skills-grid">
+      @for (group of skillGroups; track group.category) {
+        <div class="skill-group">
+          <h3>{{ group.category }}</h3>
+          <div class="skill-tags">
+            @for (skill of group.skills; track skill) {
+              <span class="skill-tag">{{ skill }}</span>
+            }
+          </div>
         </div>
-      </div>
-    }
+      }
+    </div>
   </div>
 </section>

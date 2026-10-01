@@ -6,6 +6,9 @@
   padding: var(--space-2xl);
   max-width: 800px;
   margin: 0 auto;
+  @media (max-width: 600px) {
+    padding: var(--space-xl) var(--space-md);
+  }
 }
 
 h2 {
@@ -35,6 +38,12 @@ h2 {
   gap: var(--space-md);
   margin-bottom: var(--space-md);
   flex-wrap: wrap;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
 
   h3 {
     font-size: 18px;

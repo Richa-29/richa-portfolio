@@ -4,8 +4,11 @@
 
 .about {
   padding: var(--space-2xl);
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
+  @media (max-width: 600px) {
+    padding: var(--space-xl) var(--space-md);
+  }
 }
 
 h2 {
@@ -20,4 +23,15 @@ p {
   line-height: 1.8;
   color: var(--color-text-muted);
   margin: 0 0 var(--space-lg);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-content {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
 }

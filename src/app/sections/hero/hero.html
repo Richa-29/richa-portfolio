@@ -1,20 +1,27 @@
 <section class="hero">
+  <img src="/profile.jpg" alt="Richa" class="profile-photo" />
+
   <div class="hero-content">
-    <h1>Richa</h1>
+    <h1>Richa Singhal</h1>
     <p class="role">Senior Frontend Engineer | Angular Specialist</p>
+    <div class="hero-contact">
+      <a href="mailto:singhalricha40@gmail.com">singhalricha40@gmail.com</a>
+      <span class="divider">|</span>
+      <a href="tel:+91-8882163621">+91-8882163621</a>
+    </div>
     <p class="intro">
-      Ten years of frontend engineering, distilled into interfaces
-      that are fast, maintainable, and built to last.
+      Ten years of frontend engineering, distilled into interfaces that are 
+      fast, maintainable, and built to last.
     </p>
 
     <div class="cta-group">
       <button (click)="scrollToProjects()" class="btn-primary">View Projects</button>
-      <a href="/resume.pdf" download class="btn-secondary">Download Resume</a>
+      <a href="/Resume_Richa_Singhal.pdf" download class="btn-secondary">Download Resume</a>
     </div>
+  </div>
 
-    <div class="scroll-indicator" (click)="scrollToAboutMe()">
-      <span>Scroll to explore</span>
-      <div class="arrow">↓</div>
-    </div>
+  <div class="scroll-indicator" (click)="scrollToProjects()">
+    <span>Scroll to explore</span>
+    <div class="arrow">↓</div>
   </div>
 </section>
